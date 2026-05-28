@@ -113,9 +113,8 @@ https://github.com/user-attachments/assets/15f3ce3d-1ead-4d35-9829-53188bfeaee1
 ---
 
 # System Architecture
+<img width="2162" height="1082" alt="arc" src="https://github.com/user-attachments/assets/7ad0c512-a14f-45d3-b7af-39219eded66d" />
 
-## Pipeline
-Coming soon ...
 
 ---
 
