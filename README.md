@@ -48,6 +48,8 @@ This task demonstrates dual-arm coordination and sequential manipulation capabil
 ### Demo Video
 
 <!-- Drag and drop your MP4 video here -->
+https://github.com/user-attachments/assets/2b7eddae-7ee0-46b2-a1f0-e71dabc8f76c
+
 
 ### Task Description
 
