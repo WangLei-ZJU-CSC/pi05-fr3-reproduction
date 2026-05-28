@@ -99,28 +99,19 @@ https://github.com/user-attachments/assets/15f3ce3d-1ead-4d35-9829-53188bfeaee1
 
 ---
 
-# Real-time Inference
-
-The fine-tuned policy is deployed for real-time inference on physical robots.
-
-### Inference Demo
-
-<!-- Drag and drop your MP4 video here -->
-
----
 
 # Dataset
 
 ## HuggingFace Dataset
+### Single-arm Task: Move Cup
+[Single-arm Task Dataset Link](https://huggingface.co/datasets/WANGLeiZJUCSC2025/fr3-move-cup-ds)
 
-[Dataset Link](https://huggingface.co/datasets/YOUR_DATASET_LINK)
+### Bimanual Task: Bag Bottle
+[Bimanual Task Dataset Link](https://huggingface.co/datasets/WANGLeiZJUCSC2025/bi-fr3-put-bottle-ds)
 
 ### Dataset Information
 
-* Real-world robot demonstrations
-* VR teleoperation trajectories
-* Multi-view RGB observations
-* Single-arm and bimanual tasks
+
 
 ---
 
