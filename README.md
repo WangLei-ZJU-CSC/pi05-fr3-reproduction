@@ -100,14 +100,14 @@ https://github.com/user-attachments/assets/15f3ce3d-1ead-4d35-9829-53188bfeaee1
 
 # Dataset & Model
 ## Single-arm Task: Move Cup
-The policy is initialized from the pretrained pi05_droid checkpoint released by openpi.
+The policy is initialized from the pretrained **pi05_droid** checkpoint released by openpi.
 
 [Dataset Link](https://huggingface.co/datasets/WANGLeiZJUCSC2025/fr3-move-cup-ds)
 
 [Model Link](https://huggingface.co/WANGLeiZJUCSC2025/fr3-move-cup-pi05-ckpt)
 
 ## Bimanual Task: Bag Bottle
-The policy is initialized from the pretrained pi05_base checkpoint released by openpi.
+The policy is initialized from the pretrained **pi05_base** checkpoint released by openpi.
 
 [Dataset Link](https://huggingface.co/datasets/WANGLeiZJUCSC2025/bi-fr3-put-bottle-ds)
 
