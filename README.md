@@ -22,7 +22,7 @@ The project includes:
 
 # Task Showcase
 
-## Single-arm Task: MoveCup
+## Single-arm Task: Move Cup
 
 The robot learns to move a cup to the other side of the table using π0.5 fine-tuning on VR-collected demonstrations.
 
