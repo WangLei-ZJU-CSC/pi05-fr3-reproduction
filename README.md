@@ -6,7 +6,7 @@ Real-world reproduction and deployment of π0.5 on Franka Research 3 robots base
 
 ## Overview
 
-This project focuses on reproducing π0.5 policies on real FR3 robots using the [OpenPI](https://github.com/Physical-Intelligence/openpi) framework.
+This project focuses on reproducing π0.5 policies on real FR3 robots using the [openpi](https://github.com/Physical-Intelligence/openpi) framework.
 
 The project includes:
 
