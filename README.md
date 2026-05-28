@@ -98,25 +98,15 @@ https://github.com/user-attachments/assets/15f3ce3d-1ead-4d35-9829-53188bfeaee1
 ---
 
 
-# Dataset
-
-## HuggingFace Dataset
-### Single-arm Task: Move Cup
+# Dataset & Model
+## Single-arm Task: Move Cup
 [Dataset Link](https://huggingface.co/datasets/WANGLeiZJUCSC2025/fr3-move-cup-ds)
 
-### Bimanual Task: Bag Bottle
-[Dataset Link](https://huggingface.co/datasets/WANGLeiZJUCSC2025/bi-fr3-put-bottle-ds)
-
----
-
-# Model
-
-## HuggingFace Model
-
-### Single-arm Task: Move Cup
 [Model Link](https://huggingface.co/WANGLeiZJUCSC2025/fr3-move-cup-pi05-ckpt)
 
-### Bimanual Task: Bag Bottle
+## Bimanual Task: Bag Bottle
+[Dataset Link](https://huggingface.co/datasets/WANGLeiZJUCSC2025/bi-fr3-put-bottle-ds)
+
 [Model Link](https://huggingface.co/WANGLeiZJUCSC2025/bi-fr3-put-bottle-pi05-ckpt)
 
 
