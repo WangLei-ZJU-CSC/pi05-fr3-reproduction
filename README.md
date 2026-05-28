@@ -143,6 +143,8 @@ Coming soon ...
 * Wrist camera : Intel RealSense D405
 * Scene camera : Intel RealSense D435i
 
+## VR Device
+* PICO
 
 ## Computing
 
