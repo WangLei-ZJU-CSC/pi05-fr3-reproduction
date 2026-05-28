@@ -39,6 +39,7 @@ https://github.com/user-attachments/assets/a6614d0a-fcb9-41e7-a121-7260b886e29e
 * Input: Multi-view RGB observations
 * Output: Joint velocity commands and gripper open/close state
 
+
 ---
 
 ## Bimanual Task: Bagging Bottle
@@ -50,15 +51,38 @@ This task demonstrates dual-arm coordination and sequential manipulation capabil
 ### Demo Video
 
 <!-- Drag and drop your MP4 video here -->
-https://github.com/user-attachments/assets/2b7eddae-7ee0-46b2-a1f0-e71dabc8f76c
 
+https://github.com/user-attachments/assets/2b7eddae-7ee0-46b2-a1f0-e71dabc8f76c
 
 ### Task Description
 
-* Platform: Dual Franka Research 3 (FR3) + Robotiq 2F-85 gripper
+* Platform: Dual Franka Research 3 (FR3) + Robotiq 2F-85 Gripper
 * Policy: π0.5 + LoRA fine-tuning
 * Input: Multi-view RGB observations
 * Output: Dual-arm joint velocity commands and gripper open/close state
+
+### Robustness Evaluation
+
+To evaluate the robustness and consistency of the learned bimanual policy, we additionally conducted five consecutive real-world trials without manual intervention.
+
+The policy successfully completed the bagging task across repeated executions, demonstrating stable dual-arm coordination and reliable real-time deployment performance on physical robots.
+
+### Consecutive 5-Trial Demo
+
+<!-- Drag and drop your MP4 video here -->
+https://github.com/user-attachments/assets/5984dfb7-b32c-44eb-9e09-84e22a71e1fc
+
+
+### Consecutive Trial Results
+
+| Trial | Result  |
+| ----- | ------- |
+| 1     | Success |
+| 2     | Success |
+| 3     | Success |
+| 4     | Success |
+| 5     | Success |
+
 
 ---
 
