@@ -35,7 +35,7 @@ https://github.com/user-attachments/assets/a6614d0a-fcb9-41e7-a121-7260b886e29e
 ### Task Description
 
 * Platform: Franka Research 3 (FR3) + Franka Hand
-* Policy: π0.5 + LoRA fine-tuning
+* Policy: π0.5 + LoRA fine-tuning with 80 demonstrations
 * Input: Multi-view RGB observations
 * Output: Joint velocity commands and gripper open/close state
 
@@ -57,7 +57,7 @@ https://github.com/user-attachments/assets/2b7eddae-7ee0-46b2-a1f0-e71dabc8f76c
 ### Task Description
 
 * Platform: Dual Franka Research 3 (FR3) + Robotiq 2F-85 Gripper
-* Policy: π0.5 + LoRA fine-tuning
+* Policy: π0.5 + LoRA fine-tuning with 100 demonstrations
 * Input: Multi-view RGB observations
 * Output: Dual-arm joint velocity commands and gripper open/close state
 
