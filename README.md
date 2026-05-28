@@ -78,16 +78,6 @@ demonstrating stable dual-arm coordination and reliable real-time deployment per
 https://github.com/user-attachments/assets/426176e0-96b7-4718-b1ce-7dd184836438
 
 
-### Consecutive Trial Results
-
-| Trial | Result  |
-| ----- | ------- |
-| 1     | Success |
-| 2     | Success |
-| 3     | Success |
-| 4     | Success |
-| 5     | Success |
-
 
 ---
 
