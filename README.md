@@ -95,7 +95,14 @@ The VR system enables intuitive robot control and efficient demonstration collec
 ### VR Teleoperation Demo
 
 <!-- Drag and drop your MP4 video here -->
-https://github.com/user-attachments/assets/57158965-54eb-4ab7-b680-8cab4530f8e9
+
+
+https://github.com/user-attachments/assets/15f3ce3d-1ead-4d35-9829-53188bfeaee1
+
+
+
+
+
 ---
 
 # Real-time Inference
