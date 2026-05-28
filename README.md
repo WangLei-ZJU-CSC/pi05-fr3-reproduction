@@ -75,9 +75,8 @@ demonstrating stable dual-arm coordination and reliable real-time deployment per
 
 <!-- Drag and drop your MP4 video here -->
 
-https://github.com/user-attachments/assets/426176e0-96b7-4718-b1ce-7dd184836438
 
-
+https://github.com/user-attachments/assets/25c6696b-f57c-4cb4-ad11-dded7360fa26
 
 ---
 
