@@ -142,18 +142,7 @@ The fine-tuned policy is deployed for real-time inference on physical robots.
 # System Architecture
 
 ## Pipeline
-
-```text
-VR Teleoperation
-        ↓
-Real-world Data Collection
-        ↓
-Dataset Construction
-        ↓
-OpenPI / π0.5 Fine-tuning
-        ↓
-Real-time Robot Inference
-```
+Coming soon ...
 
 ---
 
@@ -162,40 +151,23 @@ Real-time Robot Inference
 ## Robot
 
 * Franka Research 3 (FR3)
-* Dual-arm Franka setup
+* Franka Hand for single-arm task
+* Robotiq 2F-85 gripper for bimanual task
 
-## Computing
-
-* Ubuntu 22.04
-* ROS2 Humble
-* CUDA
-* PyTorch
 
 ## Sensors
 
-* Multi-view RGB cameras
-* VR teleoperation devices
+* Wrist camera : Intel RealSense D405
+* Scene camera : Intel RealSense D435i
 
----
 
-# My Contributions
+## Computing
 
-* Built local OpenPI training and inference environment
-* Developed VR teleoperation data collection pipeline
-* Collected real-world manipulation datasets
-* Adapted π0.5 for Franka robot tasks
-* Performed LoRA fine-tuning on custom datasets
-* Deployed real-time inference system on physical robots
-* Conducted single-arm and bimanual manipulation experiments
+* Ubuntu 22.04 LTS (with RT kernel)
+* Intel Core Ultra 9 285K
+* NVIDIA GeForce RTX 4090 48G
+* ROS2 Humble
 
----
-
-# Future Work
-
-* More complex long-horizon tasks
-* Tactile sensing integration
-* Better bimanual coordination
-* More efficient data collection
 
 ---
 
@@ -204,13 +176,3 @@ Real-time Robot Inference
 This project is built upon the OpenPI framework and π0.5 policy model.
 
 Thanks to the authors for open-sourcing their excellent work.
-
----
-
-# References
-
-* OpenPI
-* π0 / π0.5
-* LeRobot
-* OpenVLA
-
