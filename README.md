@@ -64,13 +64,18 @@ https://github.com/user-attachments/assets/2b7eddae-7ee0-46b2-a1f0-e71dabc8f76c
 ### Robustness Evaluation
 
 To evaluate the robustness and consistency of the learned bimanual policy, we additionally conducted five consecutive real-world trials without manual intervention.
+The policy achieved:
 
-The policy successfully completed the bagging task across repeated executions, demonstrating stable dual-arm coordination and reliable real-time deployment performance on physical robots.
+* **5 / 5 successful task completions**
+* **100% success rate**
+* Stable dual-arm coordination across repeated executions
+demonstrating stable dual-arm coordination and reliable real-time deployment performance on physical robots.
 
 ### Consecutive 5-Trial Demo
 
 <!-- Drag and drop your MP4 video here -->
-https://github.com/user-attachments/assets/5984dfb7-b32c-44eb-9e09-84e22a71e1fc
+
+https://github.com/user-attachments/assets/426176e0-96b7-4718-b1ce-7dd184836438
 
 
 ### Consecutive Trial Results
