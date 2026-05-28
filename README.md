@@ -95,8 +95,6 @@ https://github.com/user-attachments/assets/15f3ce3d-1ead-4d35-9829-53188bfeaee1
 
 
 
-
-
 ---
 
 
@@ -104,14 +102,10 @@ https://github.com/user-attachments/assets/15f3ce3d-1ead-4d35-9829-53188bfeaee1
 
 ## HuggingFace Dataset
 ### Single-arm Task: Move Cup
-[Single-arm Task Dataset Link](https://huggingface.co/datasets/WANGLeiZJUCSC2025/fr3-move-cup-ds)
+[Dataset Link](https://huggingface.co/datasets/WANGLeiZJUCSC2025/fr3-move-cup-ds)
 
 ### Bimanual Task: Bag Bottle
-[Bimanual Task Dataset Link](https://huggingface.co/datasets/WANGLeiZJUCSC2025/bi-fr3-put-bottle-ds)
-
-### Dataset Information
-
-
+[Dataset Link](https://huggingface.co/datasets/WANGLeiZJUCSC2025/bi-fr3-put-bottle-ds)
 
 ---
 
@@ -119,14 +113,12 @@ https://github.com/user-attachments/assets/15f3ce3d-1ead-4d35-9829-53188bfeaee1
 
 ## HuggingFace Model
 
-[Model Link](https://huggingface.co/YOUR_MODEL_LINK)
+### Single-arm Task: Move Cup
+[Model Link](https://huggingface.co/WANGLeiZJUCSC2025/fr3-move-cup-pi05-ckpt)
 
-### Training Details
+### Bimanual Task: Bag Bottle
+[Model Link](https://huggingface.co/WANGLeiZJUCSC2025/bi-fr3-put-bottle-pi05-ckpt)
 
-* Base Policy: π0.5
-* Framework: OpenPI
-* Fine-tuning Method: LoRA
-* Training Platform: Local multi-GPU workstation
 
 ---
 
