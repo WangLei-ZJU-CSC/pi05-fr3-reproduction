@@ -29,6 +29,8 @@ The robot learns to move a cup to the other side of the table using π0.5 fine-t
 ### Demo Video
 
 <!-- Drag and drop your MP4 video here -->
+https://github.com/user-attachments/assets/a6614d0a-fcb9-41e7-a121-7260b886e29e
+
 
 ### Task Description
 
