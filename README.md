@@ -42,7 +42,7 @@ https://github.com/user-attachments/assets/a6614d0a-fcb9-41e7-a121-7260b886e29e
 
 ---
 
-## Bimanual Task: Bagging Bottle
+## Bimanual Task: Bag Bottle
 
 One arm lifts the bag while the other arm grasps and inserts the bottle into the bag.
 
