@@ -100,7 +100,49 @@ https://github.com/user-attachments/assets/15f3ce3d-1ead-4d35-9829-53188bfeaee1
 
 # Dataset & Model
 ## Single-arm Task: Move Cup
-The policy is initialized from the pretrained **pi05_droid** checkpoint released by openpi.
+The policy is initialized from the pretrained **pi05_droid** checkpoint released by openpi and fine-tuned with the following training configuration:
+```python
+    TrainConfig(
+        # This config is for fine-tuning pi05-DROID on a custom (smaller) DROID dataset.
+        # LoRA fine-tuning for 48GB GPU.
+        name="pi05_droid_finetune",
+        model=pi0_config.Pi0Config(
+            pi05=True,
+            discrete_state_input=False,
+            action_dim=32,
+            action_horizon=16,
+            paligemma_variant="gemma_2b_lora",
+            action_expert_variant="gemma_300m_lora",
+        ),
+        data=LeRobotDROIDDataConfig(
+            repo_id="local/fr3_droid_finetune",
+            base_config=DataConfig(prompt_from_task=True),
+            assets=AssetsConfig(
+                # assets_dir="gs://openpi-assets/checkpoints/pi05_droid/assets",
+                assets_dir="/home/pc/Projects/pi0_franka/openpi-main/assets/pi05_droid_finetune/local/fr3_droid_finetune",
+                asset_id="droid_move_cap",
+            ),
+        ),
+        weight_loader=weight_loaders.CheckpointWeightLoader("/home/pc/Projects/pi0_franka/openpi-main/checkpoints/pi05_droid_jax/params"),
+        lr_schedule=_optimizer.CosineDecaySchedule(
+            warmup_steps=500,
+            peak_lr=2e-4,         
+            decay_steps=30_000,
+            decay_lr=1e-5,
+        ),
+        num_train_steps=30_000,
+        batch_size=32,
+        log_interval=1,
+        save_interval=5000,              
+        keep_period=5000,
+        freeze_filter=pi0_config.Pi0Config(
+            pi05=True,
+            paligemma_variant="gemma_2b_lora",
+            action_expert_variant="gemma_300m_lora",
+        ).get_freeze_filter(),
+        ema_decay=None,
+    ),
+```
 
 [Dataset Link](https://huggingface.co/datasets/WANGLeiZJUCSC2025/fr3-move-cup-ds)
 
