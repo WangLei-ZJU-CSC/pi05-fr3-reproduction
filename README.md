@@ -89,8 +89,6 @@ The VR system enables intuitive robot control and efficient demonstration collec
 ### VR Teleoperation Demo
 
 <!-- Drag and drop your MP4 video here -->
-
-
 https://github.com/user-attachments/assets/15f3ce3d-1ead-4d35-9829-53188bfeaee1
 
 
@@ -143,7 +141,10 @@ The policy is initialized from the pretrained **pi05_droid** checkpoint released
         ema_decay=None,
     ),
 ```
+Visualization of the training results:
 <img width="3508" height="1013" alt="image" src="https://github.com/user-attachments/assets/5cb2e32e-fb57-4e75-9666-db7fb6b9c7f7" />
+
+Huggingface repository:
 
 [Dataset Link](https://huggingface.co/datasets/WANGLeiZJUCSC2025/fr3-move-cup-ds)
 
@@ -216,7 +217,11 @@ The policy is initialized from the pretrained **pi05_base** checkpoint released 
         ).get_freeze_filter(),
     ),
 ```
+Visualization of the training results:
+
 <img width="3512" height="1015" alt="image" src="https://github.com/user-attachments/assets/bc998205-2eda-46aa-9dc4-dc7d258f5db4" />
+
+Huggingface repository:
 
 [Dataset Link](https://huggingface.co/datasets/WANGLeiZJUCSC2025/bi-fr3-put-bottle-ds)
 
