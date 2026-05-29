@@ -143,13 +143,80 @@ The policy is initialized from the pretrained **pi05_droid** checkpoint released
         ema_decay=None,
     ),
 ```
+<img width="3508" height="1013" alt="image" src="https://github.com/user-attachments/assets/5cb2e32e-fb57-4e75-9666-db7fb6b9c7f7" />
 
 [Dataset Link](https://huggingface.co/datasets/WANGLeiZJUCSC2025/fr3-move-cup-ds)
 
 [Model Link](https://huggingface.co/WANGLeiZJUCSC2025/fr3-move-cup-pi05-ckpt)
 
 ## Bimanual Task: Bag Bottle
-The policy is initialized from the pretrained **pi05_base** checkpoint released by openpi.
+The policy is initialized from the pretrained **pi05_base** checkpoint released by openpi nd fine-tuned with the following training configuration:
+```python
+    TrainConfig(
+        name="pi05_franka_bimanual",
+
+        model=pi0_config.Pi0Config(
+            pi05=True,
+            action_horizon=16,
+            action_dim=32,
+            discrete_state_input=False,
+            paligemma_variant="gemma_2b_lora",
+            action_expert_variant="gemma_300m_lora",
+        ),
+
+        data=LeRobotAlohaDataConfig(
+            repo_id="local/pi05_franka_bimanual",
+            use_delta_joint_actions=False,
+            adapt_to_pi=False,
+            base_config=DataConfig(prompt_from_task=True),
+
+            assets =AssetsConfig(
+                assets_dir="/home/pc/Projects/pi0_franka/openpi-main/assets",
+                asset_id="pi05_franka_bimanual",
+            ),
+
+            repack_transforms=_transforms.Group(
+                inputs=[
+                    _transforms.RepackTransform(
+                        {
+                            "images":{
+                                "cam_high":         "observation.images.cam_high",
+                                "cam_left_wrist":   "observation.images.cam_left_wrist",
+                                "cam_right_wrist":  "observation.images.cam_right_wrist",
+                            },
+                            "state":    "observation.state",
+                            "actions":  "action",
+                            "prompt":   "prompt",
+                        }
+                    )
+                ]
+            ),
+        ),
+
+        weight_loader=weight_loaders.CheckpointWeightLoader(
+            "/home/pc/Projects/pi0_franka/openpi-main/checkpoints/pi05_base_jax/params"
+        ),
+
+        num_train_steps=50_000,
+        batch_size=32,
+        lr_schedule=_optimizer.CosineDecaySchedule(
+            warmup_steps=300,
+            peak_lr=2e-4,
+            decay_steps=50_000,
+            decay_lr=1e-5,
+        ),
+        optimizer=_optimizer.AdamW(clip_gradient_norm=1.0),
+        ema_decay=None,
+        save_interval=2_000,
+        keep_period=5_000,
+        freeze_filter=pi0_config.Pi0Config(
+            pi05=True,
+            paligemma_variant="gemma_2b_lora",
+            action_expert_variant="gemma_300m_lora",
+        ).get_freeze_filter(),
+    ),
+```
+<img width="3512" height="1015" alt="image" src="https://github.com/user-attachments/assets/bc998205-2eda-46aa-9dc4-dc7d258f5db4" />
 
 [Dataset Link](https://huggingface.co/datasets/WANGLeiZJUCSC2025/bi-fr3-put-bottle-ds)
 
